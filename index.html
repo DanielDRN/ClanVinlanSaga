@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clan VinglanSaga</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <div class="font-sans leading-relaxed bg-[#000] text-[#f0f0f0]">
+
+        <header class="relative min-h-screen flex items-center bg-cover bg-center border-b-4 border-[#808080] transition-colors duration-500" style="background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6)), url('../img/banner.png');">
+            
+            <div class="absolute top-0 left-0 right-0 flex items-center justify-between p-5 z-50">
+                <a href="#" class="text-white text-4xl font-extrabold tracking-widest leading-none shadow-md transition-colors duration-300 hover:text-[#c4d7e0]">VinglanSaga</a>
+                <input type="checkbox" id="menu" class="hidden">
+                <label for="menu" class="lg:hidden block cursor-pointer">
+                    <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' class='h-6 w-6' fill='none' viewBox='0 0 24 24' stroke='currentColor'><path stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M4 6h16M4 12h16m-7 6h7'/></svg>" class="w-6 invert" alt="Menu Icon">
+                </label>
+                <nav class="hidden lg:block lg:clip-none lg:relative lg:top-auto lg:left-auto lg:right-auto lg:bg-transparent lg:shadow-none">
+                    <ul class="flex flex-col lg:flex-row p-4">
+                        <li><a href="#" class="relative block text-white text-base font-medium uppercase tracking-wider py-2 px-4 transition duration-300 hover:text-[#808080]">Inicio</a></li>
+                        <li><a href="#" class="relative block text-white text-base font-medium uppercase tracking-wider py-2 px-4 transition duration-300 hover:text-[#808080]">Acerca de</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="text-center w-full px-5 pt-24">
+                <img src="img/logo.jpeg" alt="Clan Logo" class="w-40 h-40 rounded-full border-4 border-[#808080] shadow-xl mx-auto mb-8 animate-pulse">
+                <p class="text-5xl font-bold md:text-xl text-gray-200 max-w-2xl mx-auto px-5 animate-fade-in">Bienvenido a nuestro sitio. Somos un clan competitivo con asistencia en los scrims</p>
+            </div>
+        </header>
+
+        <main class="background py-20">
+            <div class="container mx-auto px-4">
+                <h2 class="shimmer-text text-center text-4xl font-bold uppercase tracking-widest text-[#c4d7e0] relative pb-8 mb-16 before:content-[''] before:absolute before:bottom-0 before:left-1/2 before:-translate-x-1/2 before:w-32 before:h-1 before-gradient-to-r before-from-[#808080] before:to-[#c4d7e0] ">Nuestros Miembros</h2>
+
+                <div class="relative flex items-center justify-center my-12">
+                    <button id="prevBtn" class="bg-[#1a1a2e] border-2 border-[#808080] rounded-full w-16 h-16 flex items-center justify-center cursor-pointer transition-all duration-300 z-10 shadow-lg hover:bg-[#4e4e4e] hover:scale-110 hover:shadow-2xl">
+                        <img src="img/atras.png" class="w-8 h-8 invert" alt="Previous">
+                    </button>
+                    <div class="overflow-hidden w-[80%] mx-8">
+                        <div id="carouselSlide" class="flex transition-transform duration-500 ease-in-out">
+                            <div class="member-card min-w-[350px] mx-6 bg-[#1a1a2e] rounded-2xl overflow-hidden border-2 border-[#2b3a55] shadow-2xl">
+                                <div class="member-image w-full h-80 overflow-hidden border-b-4 border-[#808080]">
+                                    <img src="img/lider1.png" alt="Miembro 1" class="w-full h-full object-cover transition-transform">
+                                </div>
+                                <div class="p-8 text-center bg-[#1a1a2e]">
+                                    <h3 class="text-[#808080] mb-4 text-2xl font-semibold shadow-md">Yudter(lider)</h3>
+                                    <div class="social-networks">
+                                        <h4 class="mb-4 text-lg font-medium">Redes Sociales</h4>
+                                        <div class="flex justify-center gap-8">
+                                            <a href="#" class="inline-block transition-transform duration-300 hover:scale-125">
+                                                <img src="img/facebook.png" alt="Twitter" class="w-10 h-10">
+                                            </a>
+                                            <a href="#" class="inline-block transition-transform duration-300 hover:scale-125">
+                                                <img src="img/yutu.png" alt="Youtube" class="w-10 h-10">
+                                            </a>
+                                            <a href="https://www.tiktok.com/@yudter9" target="_blank" class="inline-block transition-transform duration-300 hover:scale-125">
+                                                <img src="img/tiktok.png" alt="Tiktok" class="w-10 h-10">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--==========================-->
+                            <div class="member-card min-w-[350px] mx-6 bg-[#1a1a2e] rounded-2xl overflow-hidden border-2 border-[#2b3a55] shadow-2xl ">
+                                <div class="member-image w-full h-80 overflow-hidden border-b-4">
+                                    <img src="img/miembro1.png" alt="Miembro 2" class="w-full h-full object-cover ">
+                                </div>
+                                <div class="p-8 text-center bg-[#1a1a2e]">
+                                    <h3 class="text-[#808080] mb-4 text-2xl font-semibold shadow-md">ᴠɪɴɢʟᴀɴ•Ｄａｎｉ</h3>
+                                    <div class="social-networks">
+                                        <h4 class="mb-4 text-lg font-medium">Redes Sociales</h4>
+                                        <div class="flex justify-center gap-8">
+                                            <a href="https://www.youtube.com/@ShiroFZ" target="_blank" class="inline-block transition-transform duration-300 hover:scale-125">
+                                                <img src="img/yutu.png" alt="Youtube" class="w-10 h-10">
+                                            </a>
+                                            <a href="https://www.tiktok.com/@its_daniel_188?lang=es-419" target="_blank" class="inline-block transition-transform duration-300 hover:scale-125">
+                                                <img src="img/tiktok.png" alt="Tiktok" class="w-10 h-10">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--==========================-->
+                            <div class="member-card min-w-[350px] mx-6 bg-[#1a1a2e] rounded-2xl overflow-hidden border-2 border-[#2b3a55] shadow-2xl">
+                                <div class="member-image w-full h-80 overflow-hidden border-b-4 border-[#808080]">
+                                    <img src="img/miembro2.png" alt="Miembro 3" class="w-full h-full object-cover ">
+                                </div>
+                                <div class="p-8 text-center bg-[#1a1a2e]">
+                                    <h3 class="text-[#808080] mb-4 text-2xl font-semibold shadow-md">ᴠɪɴɢʟᴀɴ•Ｃｏｐｙ</h3>
+                                    <div class="social-networks">
+                                        <h4 class="mb-4 text-lg font-medium">Redes Sociales</h4>
+                                        <div class="flex justify-center gap-8">
+                                            <a href="https://www.youtube.com/@Copitodesnow" target="_blank" class="inline-block transition-transform duration-300 hover:scale-125">
+                                                <img src="img/yutu.png" alt="Youtube" class="w-10 h-10">
+                                            </a>
+                                            <a href="https://www.tiktok.com/@copytodesnow_" target="_blank" class="inline-block transition-transform duration-300 hover:scale-125">
+                                                <img src="img/tiktok.png" alt="Tiktok" class="w-10 h-10">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--==========================-->
+                            <!-- Nuevo miembro 1 -->
+                            <div class="member-card min-w-[350px] mx-6 bg-[#1a1a2e] rounded-2xl overflow-hidden border-2 border-[#2b3a55] shadow-2xl">
+                                <div class="member-image w-full h-80 overflow-hidden border-b-4 border-[#808080]">
+                                    <img src="img/miembro3.png" alt="Miembro 4" class="w-full h-full object-cover">
+                                </div>
+                                <div class="p-8 text-center bg-[#1a1a2e]">
+                                    <h3 class="text-[#808080] mb-4 text-2xl font-semibold shadow-md">viɴɢʟᴀɴ•Luis</h3>
+                                </div>
+                            </div>
+                            <!--==========================-->
+                            <div class="member-card min-w-[350px] mx-6 bg-[#1a1a2e] rounded-2xl overflow-hidden border-2 border-[#2b3a55] shadow-2xl">
+                                <div class="member-image w-full h-80 overflow-hidden border-b-4 border-[#808080]">
+                                    <img src="img/miembro4.png" alt="Miembro 5" class="w-full h-full object-cover">
+                                </div>
+                                <div class="p-8 text-center bg-[#1a1a2e]">
+                                    <h3 class="text-[#808080] mb-4 text-2xl font-semibold shadow-md">S.U.B.A.R.U</h3>
+                                </div>
+                            </div>
+                            <!--==========================-->
+                            <div class="member-card min-w-[350px] mx-6 bg-[#1a1a2e] rounded-2xl overflow-hidden border-2 border-[#2b3a55] shadow-2xl">
+                                <div class="member-image w-full h-80 overflow-hidden border-b-4 border-[#808080]">
+                                    <img src="img/miembro5.png" alt="Miembro 5" class="w-full h-full object-cover">
+                                </div>
+                                <div class="p-8 text-center bg-[#1a1a2e]">
+                                    <h3 class="text-[#808080] mb-4 text-2xl font-semibold shadow-md">xxsn.<></h3>
+                                </div>
+                            </div>
+                            <!--==========================-->
+                            <div class="member-card min-w-[350px] mx-6 bg-[#1a1a2e] rounded-2xl overflow-hidden border-2 border-[#2b3a55] shadow-2xl">
+                                <div class="member-image w-full h-80 overflow-hidden border-b-4 border-[#808080]">
+                                    <img src="img/miembro6.png" alt="Miembro 5" class="w-full h-full object-cover">
+                                </div>
+                                <div class="p-8 text-center bg-[#1a1a2e]">
+                                    <h3 class="text-[#808080] mb-4 text-2xl font-semibold shadow-md">Naza0522</h3>
+                                    <div class="social-networks">
+                                        <h4 class="mb-4 text-lg font-medium">Redes Sociales</h4>
+                                        <div class="flex justify-center gap-8">
+                                            <a href="https://www.tiktok.com/@naza_1422?_t=ZM-8zD3Z1a2LxN&_r=1" target="_blank" class="inline-block transition-transform duration-300 hover:scale-125">
+                                                <img src="img/tiktok.png" alt="Tiktok" class="w-10 h-10">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button id="nextBtn" class="bg-[#1a1a2e] border-2 border-[#808080] rounded-full w-16 h-16 flex items-center justify-center cursor-pointer transition-all duration-300 z-10 shadow-lg hover:bg-[#4e4e4e] hover:scale-110 hover:shadow-2xl">
+                        <img src="img/adelante.png" class="w-8 h-8 invert" alt="Next">
+                    </button>
+                </div>
+            </div>
+            <p class="text-center font-bold text-4xl">Contactanos para participar en la prueba y poder unirtenos</p>
+            <div class="flex justify-center w-full my-8">
+                <a href="https://wa.me/+584128474639?text=Hola%20me%20quiero%20unir%20al%20clan%20y%20quiero%20hacer%20la%20prueba%20" target="_blank" class="bg-lime-600 hover:bg-lime-700 text-white font-bold py-4 px-8 rounded-lg transition-colors duration-300 transform hover:scale-105 shadow-xl ease-in-out">Mandar mensaje</a>
+            </div>
+        </main>
+
+        <footer class="bg-[#10101f] text-white text-center py-12 border-t-2 border-[#808080]">
+            <p class="text-base font-medium">&copy; 2025 VinglanSaga Todos los derechos reservados.</p>
+        </footer>
+
+        <script src="js/javascript.js"></script>
+    </div>
+</body>
+</html>

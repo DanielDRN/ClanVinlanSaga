@@ -1,0 +1,50 @@
+.animate-fade-in {
+            animation: fadeIn 1s ease-in-out forwards;
+        }
+        .animate-fade-in-down {
+            animation: fadeInDown 1s ease-in-out forwards;
+        }
+        .animate-pulse {
+            animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        @keyframes fadeInDown {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        @keyframes pulse {
+            0%, 100% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.05);
+            }
+        }
+
+        .shimmer-text {
+            position: relative;
+            background: linear-gradient(90deg, #6adba7, #0bc3e4, #390ae2);
+            background-size: 250% 100%;
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: shimmer 3s infinite;
+            text-shadow: 0 0 10px #390ae2;
+        }
+
+        @keyframes shimmer {
+            0% {
+                background-position: -250% 0;
+            }
+            100% {
+                background-position: 250% 0;
+            }
+        }
+.background{
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6)), url('../img/banner2.png');
+    background-repeat: no-repeat;
+    background-position: center;
+}
